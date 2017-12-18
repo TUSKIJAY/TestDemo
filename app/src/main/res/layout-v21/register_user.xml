@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Username:"
+            android:textSize="18dp"/>
+        <EditText
+            android:id="@+id/register_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/second"
+        android:layout_below="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Password:"
+            android:textSize="18dp"/>
+        <EditText
+            android:id="@+id/register_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/third"
+        android:layout_below="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Password:"
+            android:textSize="18dp"/>
+        <EditText
+            android:id="@+id/register_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/forth"
+        android:layout_below="@+id/third"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Email:"
+            android:textSize="18dp"/>
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/fifth"
+        android:layout_below="@+id/forth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/register"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:text="Register"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/response_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="I'm here"/>
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart='@+id/password'
+        android:hint="username"/>
+    <EditText
+        android:id="@+id/password"
+        android:layout_centerInParent="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:hint="password"/>
+
+    <CheckBox
+        android:id="@+id/remember_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart='@+id/password'
+        android:text="Remember Password"
+        android:textColor="@android:color/background_dark" />
+    <Button
+        android:id="@+id/login"
+        android:layout_below="@+id/remember_password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:text="login"/>
+
+    <TextView
+        android:id="@+id/response_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="I'm here"/>
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="register"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/register1" />
+
+</RelativeLayout>
